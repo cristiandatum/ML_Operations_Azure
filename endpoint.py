@@ -15,28 +15,50 @@ data = {
     "Inputs": {
         "data":
         [
-            {
-                "age": "0",
-                "job": "example_value",
-                "marital": "example_value",
-                "education": "example_value",
-                "default": "example_value",
-                "housing": "example_value",
-                "loan": "example_value",
-                "contact": "example_value",
-                "month": "example_value",
-                "day_of_week": "example_value",
-                "duration": "0",
-                "campaign": "0",
-                "pdays": "0",
-                "previous": "0",
-                "poutcome": "example_value",
-                "emp.var.rate": "0",
-                "cons.price.idx": "0",
-                "cons.conf.idx": "0",
-                "euribor3m": "0.0",
-                "nr.employed": "0"
-            },
+          {
+            "age": "55",
+            "job": "technician",
+            "marital": "married",
+            "education": "high.school",
+            "default": "no",
+            "housing": "no",
+            "loan": "no",
+            "contact": "cellular",
+            "month": "may",
+            "day_of_week": "mon",
+            "duration": "300",
+            "campaign": "1",
+            "pdays": "999",
+            "previous": "1",
+            "poutcome": "failure",
+            "emp.var.rate": "-1.8",
+            "cons.price.idx": "92.893",
+            "cons.conf.idx": "-46.2",
+            "euribor3m": "1.299",
+            "nr.employed": "5099.1"
+          },
+          {
+            "age": "43",
+            "job": "blue-collar",
+            "marital": "single",
+            "education": "basic.9y",
+            "default": "no",
+            "housing": "yes",
+            "loan": "no",
+            "contact": "cellular",
+            "month": "jul",
+            "day_of_week": "thu",
+            "duration": "982",
+            "campaign": "1",
+            "pdays": "999",
+            "previous": "0",
+            "poutcome": "nonexistent",
+            "emp.var.rate": "1.4",
+            "cons.price.idx": "93.918",
+            "cons.conf.idx": "-42.7",
+            "euribor3m": "4.963",
+            "nr.employed": "5288.1"
+          },
         ]
     },
     "GlobalParameters": {
@@ -46,15 +68,11 @@ data = {
 
 body = str.encode(json.dumps(data))
 
-# URL for the web service
-scoring_uri = 'http://7386b71a-601c-48fb-b109-c47416fa192a.westeurope.azurecontainer.io/score'
-
-# If the service is authenticated, set the key or token
-api_key = "7BhaMreasi8hCGNhUHRqDccnZHHyRpl1"
-
+url = 'http://b240a300-1c41-498a-b060-15713ad5725c.westeurope.azurecontainer.io/score'
+api_key = 'fIL1AIb9AGMxH4DdDz5aG4WGbjyMHXVN' # Replace this with the API key for the web service
 headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
-req = urllib.request.Request(scoring_uri, body, headers)
+req = urllib.request.Request(url, body, headers)
 
 try:
     response = urllib.request.urlopen(req)

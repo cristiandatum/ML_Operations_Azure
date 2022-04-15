@@ -92,7 +92,7 @@ A Service Principal is created to limit the scope of the resource group.
 ![Step 7](screenshots\7.4-widget-finished.png)
 
 ## Screen Recording
-https://youtu.be/pocQQJ9NJb0
+https://youtu.be/uE1wTV3_dtM
 
 ## Next Steps
 The following could be used to improve the work:
