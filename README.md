@@ -16,10 +16,7 @@ The automated Azure ML pipeline was built in Azure ML Studio following these ste
 
 - Deploy the best model: The selected model (the one with the highest accuracy in this case) is deployed using the URL provided in Azure ML Studio, and creating an Azure Container Instance (ACI) with Authentication enabled.
 
-- Consume and interact with the model:
-
-pipeline!
-
+- Consume and interact with the model: The deployed model is accessed using the created endpoints in Azure ML. A script is run using new sample data, the given API and key in Azure ML.
 
 ## Architectural Diagram
 
