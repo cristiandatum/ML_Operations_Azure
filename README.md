@@ -4,7 +4,7 @@ This project is part of the Udacity Azure ML Nanodegree.
 
 ## Overview
 
-In this project, we build an Azure AutoML pipeline using Python SDK for a classifier prediction application.
+In this project, we build an Azure AutoML pipeline using Python SDK for a classifier prediction application. The benefits of using a pipeline are the automation of the steps carried out when creating, deploying, and consuming a AutoML model.
 
 The ficticious dataset belongs to a bank and includes 20 different features from its customers (age, job, marital status, loans, etc.) This dataset is mapped to a binary target (yes/no) to determine the marketing campaign effectiveness.
 
