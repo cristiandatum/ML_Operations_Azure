@@ -30,18 +30,18 @@ The automated Azure ML pipeline was built in Azure ML Studio following these ste
 A Service Principal is created to limit the scope of the resource group.
 
 *Figure 1.1: Service Principal created from PowerShell terminal*
-![Step 1](screenshots\1.1-az_ms_ws_share.jpg)
+![Step 1](screenshots/1.1-az_ms_ws_share.jpg)
 
 *Figure 1.2: Allow the Service Principal access to the Workspace:*
-![Step 1](screenshots\1.2-az_ms_ws_share.jpg)
+![Step 1](screenshots/1.2-az_ms_ws_share.jpg)
 
 
 ### Step 2: Automated ML Experiment
 *Figure 2.1: A ML Experiment is created:*
-![Step 2](screenshots\2.1-registered_datasets.png)
+![Step 2](screenshots/2.1-registered_datasets.png)
 
 *Figure 2.2: And the ML Experiment is completed:*
-![Step 2](screenshots\2.2-completed-experiment.png)
+![Step 2](screenshots/2.2-completed-experiment.png)
 
 
 ### Step 3: Deploy the Best Model
@@ -51,31 +51,31 @@ A Service Principal is created to limit the scope of the resource group.
 
 ### Step 4: Enable Logging
 *Figure 4.1: Application insights is enabled:*
-![Step 4](screenshots\4-application-insights-enabled.png)
+![Step 4](screenshots/4-application-insights-enabled.png)
 
 *Figure 4.2: And the output can be monitored:*
-![Step 4](screenshots\4-application-insights-output.png)
+![Step 4](screenshots/4-application-insights-output.png)
 
 *Figure 4.3: The logs can be seen running script "logs.py":*
-![Step 4](screenshots\4-logs-py-output.png)
+![Step 4](screenshots/4-logs-py-output.png)
 
 
 ### Step 5: Swagger Documentation
 
 *Figure 5.1: Swagger is used to document and consum RESTful web service:*
-![Step 5](screenshots\5-swagger-output.png)
+![Step 5](screenshots/5-swagger-output.png)
 
 *Figure 5.2: Swagger provides information on types of HTTP requests that an API can consume POST: and GET: with details on the data:*
-![Step 5](screenshots\5-swagger-output-2.png)
+![Step 5](screenshots/5-swagger-output-2.png)
 
 
 ### Step 6: Consume Model Endpoints
 
 *Figure 6.1: The model endpoints can be consumed by running a script from the terminal* 
-![Step 6](screenshots\6-consume_endpoints_test_terminal.png)
+![Step 6](screenshots/6-consume_endpoints_test_terminal.png)
 
 *Figure 6.2: The models can be tested and consumed from Azure ML Studio*
-![Step 6](screenshots\6.1-consume_endpoints_test.png)
+![Step 6](screenshots/6.1-consume_endpoints_test.png)
 
 
 ### Step 7: Create, Publish, and Consume
