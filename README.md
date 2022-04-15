@@ -1,9 +1,9 @@
 # Optimizing an ML Pipeline in Azure
 ## by Cristian Alberch as part of Udacity Nanodegree "Machine Learning Engineer with Azure"
+This project is part of the Udacity Azure ML Nanodegree.
 
 ## Overview
 
-This project is part of the Udacity Azure ML Nanodegree.
 In this project, we build an Azure AutoML pipeline using Python SDK for a classifier prediction application.
 
 The ficticious dataset belongs to a bank and includes 20 different features from its customers (age, job, marital status, loans, etc.) This dataset is mapped to a binary target (yes/no) to determine the marketing campaign effectiveness.
